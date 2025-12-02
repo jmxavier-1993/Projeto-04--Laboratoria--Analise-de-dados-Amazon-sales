@@ -17,7 +17,8 @@ Este relatório apresenta os resultados de uma análise exploratória e de valid
 
 Abaixo, uma visualização geral dos dados analisados no Looker Studio:
 
-![Dashboard do Projeto Amazon Sales](Projeto_4_-_Dupla_Ana_e_Juliana_page-0001.jpg)(Projeto_4_-_Dupla_Ana_e_Juliana_page-0002.jpg)
+![Dashboard Página 1](Projeto_4_-_Dupla_Ana_e_Juliana_page-0001.jpg)
+![Dashboard Página 2](Projeto_4_-_Dupla_Ana_e_Juliana_page-0002.jpg)
 
 
 ---
@@ -84,10 +85,10 @@ Durante o projeto, foram realizados testes estatísticos (Shapiro-Wilk, Mann-Whi
 
 ## 💡 Insights Essenciais
 
-1.  [cite_start]**Desconto não garante satisfação:** Clientes podem interpretar descontos excessivos como sinal de baixa qualidade ou inflação do preço original[cite: 3126].
-2.  [cite_start]**Popularidade é sinal de qualidade:** Produtos com alto volume de vendas/avaliações tendem a manter uma consistência de qualidade superior[cite: 3127].
-3.  [cite_start]**Consistência das Notas:** A maioria dos produtos mantém uma média entre 4.0 e 4.5 estrelas, indicando uma qualidade percebida uniforme na plataforma[cite: 3131].
-4.  [cite_start]**Extremos:** O dataset possui uma grande base de produtos baratos com poucas avaliações e uma minoria de produtos caros e extremamente populares[cite: 3130].
+1.[cite_start]**Desconto não garante satisfação:** Clientes podem interpretar descontos excessivos como sinal de baixa qualidade ou inflação do preço original[cite: 3126].
+2.[cite_start]**Popularidade é sinal de qualidade:** Produtos com alto volume de vendas/avaliações tendem a manter uma consistência de qualidade superior[cite: 3127].
+3.[cite_start]**Consistência das Notas:** A maioria dos produtos mantém uma média entre 4.0 e 4.5 estrelas, indicando uma qualidade percebida uniforme na plataforma[cite: 3131].
+4.[cite_start]**Extremos:** O dataset possui uma grande base de produtos baratos com poucas avaliações e uma minoria de produtos caros e extremamente populares[cite: 3130].
 
 ---
 
@@ -95,5 +96,5 @@ Durante o projeto, foram realizados testes estatísticos (Shapiro-Wilk, Mann-Whi
 
 Com base nos dados, sugerimos as seguintes estratégias:
 
-* [cite_start]**Reavaliar Estratégia de Descontos:** Evitar descontos agressivos como única ferramenta de atração, pois podem prejudicar a percepção de valor da marca[cite: 3118].
-* [cite_start]**Focar na Popularidade:** Investir em marketing e campanhas que incentivem os clientes a deixarem avaliações, pois o volume de reviews é um forte validador de qualidade para novos compradores[cite: 3121, 3122].
+*[cite_start]**Reavaliar Estratégia de Descontos:** Evitar descontos agressivos como única ferramenta de atração, pois podem prejudicar a percepção de valor da marca.
+*[cite_start]**Focar na Popularidade:** Investir em marketing e campanhas que incentivem os clientes a deixarem avaliações, pois o volume de reviews é um forte validador de qualidade para novos compradores.
