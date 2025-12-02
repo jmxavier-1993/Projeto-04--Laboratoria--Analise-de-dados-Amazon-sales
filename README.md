@@ -69,26 +69,26 @@ Durante o projeto, foram realizados testes estatísticos (Shapiro-Wilk, Mann-Whi
 ### 1. Descontos vs. Qualidade Percebida (Hipótese Refutada)
 * **Hipótese:** Produtos com maior desconto são melhor classificados?
 * **Resultado:** **Não.** A hipótese foi refutada.
-* **Análise:** Existe uma correlação negativa fraca (-0.15). Produtos com grandes descontos tendem a ter avaliações ligeiramente piores. [cite_start]O Risco Relativo mostrou que o risco de ter uma nota alta (≥4.5) é menor para produtos com grandes descontos[cite: 3124, 3125].
+* **Análise:** Existe uma correlação negativa fraca (-0.15). Produtos com grandes descontos tendem a ter avaliações ligeiramente piores. O Risco Relativo mostrou que o risco de ter uma nota alta (≥4.5) é menor para produtos com grandes descontos.
 
 ### 2. Sentimento vs. Classificação (Hipótese Confirmada)
 * **Hipótese:** Avaliações com texto positivo resultam em notas maiores?
 * **Resultado:** **Sim.**
-* [cite_start]**Análise:** O risco de um produto ter uma nota alta (≥4.5) é **1.34 vezes maior** quando o sentimento da avaliação é positivo[cite: 3111, 3112].
+* **Análise:** O risco de um produto ter uma nota alta (≥4.5) é **1.34 vezes maior** quando o sentimento da avaliação é positivo.
 
 ### 3. Popularidade vs. Classificação (Hipótese Confirmada)
 * **Hipótese:** Produtos com mais avaliações (mais populares) são melhor classificados?
 * **Resultado:** **Sim.**
-* **Análise:** Produtos populares têm uma probabilidade significativamente maior de serem bem avaliados. [cite_start]O Risco Relativo indica que produtos com mais avaliações têm **1.09 vezes** mais chance de ter notas altas[cite: 3114, 3115].
+* **Análise:** Produtos populares têm uma probabilidade significativamente maior de serem bem avaliados. O Risco Relativo indica que produtos com mais avaliações têm **1.09 vezes** mais chance de ter notas altas.
 
 ---
 
 ## 💡 Insights Essenciais
 
-1.[cite_start]**Desconto não garante satisfação:** Clientes podem interpretar descontos excessivos como sinal de baixa qualidade ou inflação do preço original[cite: 3126].
-2.[cite_start]**Popularidade é sinal de qualidade:** Produtos com alto volume de vendas/avaliações tendem a manter uma consistência de qualidade superior[cite: 3127].
-3.[cite_start]**Consistência das Notas:** A maioria dos produtos mantém uma média entre 4.0 e 4.5 estrelas, indicando uma qualidade percebida uniforme na plataforma[cite: 3131].
-4.[cite_start]**Extremos:** O dataset possui uma grande base de produtos baratos com poucas avaliações e uma minoria de produtos caros e extremamente populares[cite: 3130].
+1.**Desconto não garante satisfação:** Clientes podem interpretar descontos excessivos como sinal de baixa qualidade ou inflação do preço original.
+2.**Popularidade é sinal de qualidade:** Produtos com alto volume de vendas/avaliações tendem a manter uma consistência de qualidade superior.
+3.**Consistência das Notas:** A maioria dos produtos mantém uma média entre 4.0 e 4.5 estrelas, indicando uma qualidade percebida uniforme na plataforma.
+4.**Extremos:** O dataset possui uma grande base de produtos baratos com poucas avaliações e uma minoria de produtos caros e extremamente populares.
 
 ---
 
@@ -96,5 +96,5 @@ Durante o projeto, foram realizados testes estatísticos (Shapiro-Wilk, Mann-Whi
 
 Com base nos dados, sugerimos as seguintes estratégias:
 
-*[cite_start]**Reavaliar Estratégia de Descontos:** Evitar descontos agressivos como única ferramenta de atração, pois podem prejudicar a percepção de valor da marca.
-*[cite_start]**Focar na Popularidade:** Investir em marketing e campanhas que incentivem os clientes a deixarem avaliações, pois o volume de reviews é um forte validador de qualidade para novos compradores.
+***Reavaliar Estratégia de Descontos:** Evitar descontos agressivos como única ferramenta de atração, pois podem prejudicar a percepção de valor da marca.
+***Focar na Popularidade:** Investir em marketing e campanhas que incentivem os clientes a deixarem avaliações, pois o volume de reviews é um forte validador de qualidade para novos compradores.
