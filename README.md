@@ -1,67 +1,99 @@
-Equipe: Ana virgínia Morais e Juliana Marinho Xavier
+# Projeto 04: Análise de Dados Amazon Sales
 
-### **Introdução**
+**Equipe:** Ana Virgínia Morais e Juliana Marinho Xavier
 
-> Este relatório apresenta os resultados de uma análise exploratória e de validação de hipóteses sobre um conjunto de dados de produtos e avaliações da Amazon. O objetivo principal foi investigar a relação entre descontos, popularidade e a qualidade percebida dos produtos.
-> 
+## 📋 Introdução
 
-**Links:**
+Este relatório apresenta os resultados de uma análise exploratória e de validação de hipóteses sobre um conjunto de dados de produtos e avaliações da Amazon. O objetivo principal foi investigar a relação entre descontos, popularidade e a qualidade percebida dos produtos.
 
-- **Apresentação:**https://docs.google.com/presentation/d/1z9FMRw8Uh7r-ALzcFmke2FsVNmVD1QkRCeu-M0mREB0/edit?slide=id.p#slide=id.p
-- **Google Colab:** https://colab.research.google.com/drive/1iCQgxWGuhup4gdUeKhO9YPAIYr1l6rAQ#scrollTo=DThDoJ6Q30UC
-- **Dashboard:**https://lookerstudio.google.com/reporting/c79f26b0-1416-4216-ade1-0e9d1f8ef07b/page/9VKYF
+### 🔗 Links Importantes
+* **Apresentação:** [Google Slides](https://docs.google.com/presentation/d/1z9FMRw8Uh7r-ALzcFmke2FsVNmVD1QkRCeu-M0mREB0/edit?slide=id.p#slide=id.p)
+* **Google Colab (Notebook):** [Acessar Código](https://colab.research.google.com/drive/1iCQgxWGuhup4gdUeKhO9YPAIYr1l6rAQ#scrollTo=DThDoJ6Q30UC)
+* **Dashboard Interativo:** [Looker Studio](https://lookerstudio.google.com/reporting/c79f26b0-1416-4216-ade1-0e9d1f8ef07b/page/9VKYF)
 
-## **1. Ferramentas, Linguagens e Insumos**
+---
 
-### **1.1 Ferramentas e/ou plataformas**
+## 📊 Dashboard
 
-Neste projeto você pode escolher com quais ferramentas de AI irá trabalhar. Porém, recomendamos o uso do Google Colab e Gemini em conjunto, desta forma você poderá revisar e alterar os códigos sugeridos pelo Gemini na mesma tela.
+Abaixo, uma visualização geral dos dados analisados no Looker Studio:
 
-Ferramentas disponíveis:
+![Dashboard do Projeto Amazon Sales](Projeto_4_-_Dupla_Ana_e_Juliana_page-0001.jpg)(Projeto_4_-_Dupla_Ana_e_Juliana_page-0002.jpg)
 
-- Google Colab ou outro notebook
-- Apresentações Google
-- Como Inteligências Artificiais recomendamos e Gemini ou ChatGPT
 
-### **1.2 Linguagens**
+---
 
-Este projeto será desenvolvido em Python.
+## 🛠 Ferramentas e Tecnologias
 
-### **1.3 Bases de dados**
+### Ferramentas
+* **Google Colab:** Para desenvolvimento e execução do código Python.
+* **Gemini/ChatGPT:** Utilizados como assistentes de codificação e revisão.
+* **Looker Studio:** Para construção do dashboard interativo.
+* **Google Slides:** Para apresentação dos resultados.
 
-Neste projeto você poderá escolher qual conjunto de dados analisar. O objetivo da escolha da base de dados é que neste projeto você se sinta mais livre para explorar os dados, definir o objetivo e escolher um conjunto de dados com um tópico que você acha mais interessante para desenvolver o projeto.
+### Linguagem
+* **Python:** Linguagem principal utilizada para manipulação de dados, análise estatística e visualização.
 
-É muito importante ter em conta, ao escolher uma base de dados, que cada conjunto possui características e complexidades próprias. Leia atentamente a descrição das variáveis e resumo do conjunto de dados antes de tomar uma decisão.
+---
 
-### **Opção 2: Amazon sales**
+## 📂 Base de Dados (Amazon Sales)
 
-Este conjunto de dados contém dados de mais de 1.000 classificações e análises de produtos disponíveis para venda na Amazon.
+O conjunto de dados contém mais de 1.000 classificações e análises de produtos da Amazon, obtidos via Kaggle. A análise foca em entender o processo desde a precificação até a percepção do cliente.
 
-Amazon é uma empresa americana de tecnologia com operações multinacionais, cujos interesses comerciais incluem comércio eletrônico, para o qual compram e armazenam estoque, e cuidam de todo o processo, desde a precificação até o envio, atendimento ao cliente e devoluções.
+### Dicionário de Variáveis
 
-Os dados vêm de um repositório no Kaggle.
+**Tabela `amazon_product`**
+* `product_id`: ID do produto
+* `product_name`: Nome do produto
+* `category`: Categoria do produto
+* `discounted_price`: Preço com desconto
+* `actual_price`: Preço real
+* `discount_percentage`: Porcentagem de desconto
+* `about_product`: Descrição do produto
 
-**Descrição das variáveis:**
+**Tabela `amazon_review`**
+* `user_id`: ID do usuário
+* `user_name`: Nome do usuário
+* `Review_id`: ID da avaliação
+* `Review_title`: Título da avaliação
+* `Review_content`: Conteúdo completo da avaliação
+* `Rating`: Classificação do produto (Nota)
+* `Rating_count`: Contagem de avaliações (Popularidade)
 
-**Tabela amazon_product**
+---
 
-- product_id: ID do produto
-- product_name: Nome do produto
-- category: Categoria do produto
-- discounted_price: Preço com desconto do produto
-- actual_price: Preço real do produto
-- discount_percentage: Porcentagem de desconto do produto
-- about_product: Descrição sobre o produto
+## 🚀 Conclusões e Validação de Hipóteses
 
-**Tabela amazon_review**
+Durante o projeto, foram realizados testes estatísticos (Shapiro-Wilk, Mann-Whitney U, Correlação de Spearman) para validar três hipóteses principais.
 
-- user_id: ID do usuário que escreveu a avaliação do produto
-- user_name: Nome do usuário que escreveu a avaliação do produto
-- Review_id: ID da avaliação do usuário
-- Review_title: Breve avaliação do usuário
-- Review_content: Avaliação completa do usuário
-- Img_link: Link da imagem do produto
-- Product_link: Link para o site oficial do produto
-- Product_id: ID do produto
-- Rating: Classificação do produto
-- Rating_count: Número de pessoas que votaram na classificação da Amazon.
+### 1. Descontos vs. Qualidade Percebida (Hipótese Refutada)
+* **Hipótese:** Produtos com maior desconto são melhor classificados?
+* **Resultado:** **Não.** A hipótese foi refutada.
+* **Análise:** Existe uma correlação negativa fraca (-0.15). Produtos com grandes descontos tendem a ter avaliações ligeiramente piores. [cite_start]O Risco Relativo mostrou que o risco de ter uma nota alta (≥4.5) é menor para produtos com grandes descontos[cite: 3124, 3125].
+
+### 2. Sentimento vs. Classificação (Hipótese Confirmada)
+* **Hipótese:** Avaliações com texto positivo resultam em notas maiores?
+* **Resultado:** **Sim.**
+* [cite_start]**Análise:** O risco de um produto ter uma nota alta (≥4.5) é **1.34 vezes maior** quando o sentimento da avaliação é positivo[cite: 3111, 3112].
+
+### 3. Popularidade vs. Classificação (Hipótese Confirmada)
+* **Hipótese:** Produtos com mais avaliações (mais populares) são melhor classificados?
+* **Resultado:** **Sim.**
+* **Análise:** Produtos populares têm uma probabilidade significativamente maior de serem bem avaliados. [cite_start]O Risco Relativo indica que produtos com mais avaliações têm **1.09 vezes** mais chance de ter notas altas[cite: 3114, 3115].
+
+---
+
+## 💡 Insights Essenciais
+
+1.  [cite_start]**Desconto não garante satisfação:** Clientes podem interpretar descontos excessivos como sinal de baixa qualidade ou inflação do preço original[cite: 3126].
+2.  [cite_start]**Popularidade é sinal de qualidade:** Produtos com alto volume de vendas/avaliações tendem a manter uma consistência de qualidade superior[cite: 3127].
+3.  [cite_start]**Consistência das Notas:** A maioria dos produtos mantém uma média entre 4.0 e 4.5 estrelas, indicando uma qualidade percebida uniforme na plataforma[cite: 3131].
+4.  [cite_start]**Extremos:** O dataset possui uma grande base de produtos baratos com poucas avaliações e uma minoria de produtos caros e extremamente populares[cite: 3130].
+
+---
+
+## 📢 Recomendações de Negócio
+
+Com base nos dados, sugerimos as seguintes estratégias:
+
+* [cite_start]**Reavaliar Estratégia de Descontos:** Evitar descontos agressivos como única ferramenta de atração, pois podem prejudicar a percepção de valor da marca[cite: 3118].
+* [cite_start]**Focar na Popularidade:** Investir em marketing e campanhas que incentivem os clientes a deixarem avaliações, pois o volume de reviews é um forte validador de qualidade para novos compradores[cite: 3121, 3122].
